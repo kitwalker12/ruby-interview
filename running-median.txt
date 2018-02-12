@@ -1,0 +1,24 @@
+# Pseudo code
+# Maintain two heaps (mix and max) of about same size
+
+# if more elements in left (max) heap
+#   if new element < median (fits in left heap)
+#     pop from left
+#     insert in right
+#   else
+#     insert in right
+#   median = average from top of left and right
+# else if same number of elements
+#   if new element < median (fits in left heap)
+#     insert in left
+#     median = top of left
+#   else
+#     insert in right
+#     median = top of right
+# else if more elements in right (min) heap
+#   if new element < median (fits in left heap)
+#     insert in left
+#   else
+#     pop from right
+#     insert in left
+#   median = average from top of left and right
